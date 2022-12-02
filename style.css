@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+  transition: all 0.5s;
+}
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(167, 167, 167); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 2.5px solid rgb(0, 0, 0); /* creates padding around scroll thumb */
+}
+
+h2 {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+
+/* first page */
+
+.first {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(229, 228, 228),
+    rgb(178, 178, 178)
+  );
+}
+.firstPage {
+  height: 90vh;
+  box-shadow: 0px 15px 15px -15px #111;
+}
+.navbar {
+  height: 10vh;
+  max-width: 100%;
+  box-shadow: 0px 15px 15px -15px #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background-color: rgb(175, 175, 175);
+}
+.navbar-left {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+
+.navbar ul li {
+  display: inline;
+  padding: 0 20px;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+.navbar ul a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+.intro {
+  display: flex;
+  margin-top: 5%;
+  padding: 0% 10%;
+  height: 50%;
+  justify-content: space-between;
+}
+.intro-left {
+  width: 40%;
+  text-align: right;
+  margin-right: 15%;
+  top: 40px;
+}
+.logo-developer {
+  width: 100%;
+}
+.intro-right {
+  width: 50%;
+  position: relative;
+  text-align: center;
+  line-height: 2;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.name {
+  font-family: "Lobster", cursive;
+}
+.intro-heading {
+  position: relative;
+  right: 8%;
+}
+.inside-right {
+  position: relative;
+  top: 15%;
+  right: 35%;
+}
+
+/* second page */
+
+.secondPage {
+  height: max-content;
+  line-height: 2;
+  box-shadow: 0px 15px 15px -15px #111;
+  padding: 5% 11%;
+}
+.about1 {
+  margin-bottom: 40px;
+}
+.skills {
+  display: flex;
+  margin-top: 30px;
+}
+.sk {
+  text-align: center;
+  width: 33%;
+  padding: 0 2%;
+}
+.skimg {
+  width: 80%;
+}
+.thirdPage {
+  padding: 10% 10%;
+  height: 70vh;
+}
+.elements {
+  padding: 20px 0px;
+  font-size: 45px;
+}
+.hidden {
+  display: none;
+}
+.blur:not(.mobile-active) {
+  filter: blur(5px);
+}
+.mobile-active {
+  background: rgb(255, 255, 255, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  transition: 1s;
+  text-align: center;
+  top: 15%;
+  padding-top: 50px;
+  margin: 0 12%;
+  position: sticky;
+  height: 20vh;
+  font-size: 25px;
+  padding: 20px;
+  font-weight: bold;
+  z-index: 5;
+}
+.mobile-list li {
+  list-style: none;
+  padding: 5px 0px;
+}
+
+.mar-top {
+  margin-top: 20px;
+}
+
+/* Media Querries */
+
+@media (max-width: 42em) {
+  .mobile-navbar {
+    display: block;
+  }
+  .navbar-right {
+    display: none;
+  }
+  .mobile-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: block;
+    font-size: 30px;
+  }
+  .close {
+    display: none;
+    font-size: 30px;
+  }
+  .intro {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  .intro-left {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .logo-developer {
+    width: 100%;
+  }
+  .intro-right {
+    width: 100%;
+  }
+  .inside-right {
+    position: relative;
+    left: 7%;
+    font-size: 30px;
+  }
+  .intro-heading {
+    position: relative;
+  }
+
+  .firstPage {
+    height: max-content;
+    padding-bottom: 20%;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .secondPage {
+    height: max-content;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+  .about1 {
+    margin-top: 30%;
+  }
+  .sk {
+    width: 100%;
+  }
+  .skimg {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .thirdPage {
+    text-align: center;
+    height: 60vh;
+    margin-top: 20%;
+  }
+}

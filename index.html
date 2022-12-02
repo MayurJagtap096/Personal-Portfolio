@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayur Jagtap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="first" id="home">
+      <div class="navbar">
+        <div class="navbar-left">Mayur Jagtap</div>
+        <div class="navbar-right">
+          <ul class="navbar-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="mobile-navbar">
+          <i class="fa-solid fa-bars menu"></i>
+          <i class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+      <div class="mobile-active hidden">
+        <ul class="mobile-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="firstPage pages">
+        <div class="intro">
+          <div class="intro-left">
+            <img class="logo-developer" src="images/logo.png" alt="" />
+          </div>
+          <div class="intro-right">
+            <div class="inside-right">
+              <h3 class="intro-heading">Hello there,</h3>
+              <p class="intro-heading">I'M</p>
+              <p class="name">Mayur Jagtap</p>
+              <p>A web { developer }</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondPage pages" id="about">
+        <div class="about1">
+          <h2>About Me</h2>
+          <p>
+            Hey there, I am a web developer. I enjoy learning pretty much
+            everything and exploring new opportunities.
+          </p>
+          <p>
+            Well, acedamically I am pursuing my degree in Computer Engineering
+            for BTech, but I would call myself a student of life long learning.
+          </p>
+        </div>
+        <h2>My Skills</h2>
+        <div class="skills">
+          <div class="skill1 sk">
+            <h3>Programming</h3>
+            <img class="skimg" src="images/programmingjpg.png" alt="" />
+          </div>
+          <div class="skill2 sk">
+            <h3>Web Development</h3>
+            <img src="images/webDev.png" alt="" class="skimg mar-top" />
+          </div>
+          <div class="skill3 sk">
+            <h3>Machine Learning</h3>
+            <img src="images/ml.png" alt="" class="skimg mar-top" />
+          </div>
+        </div>
+      </div>
+      <div class="thirdPage pages" id="contact">
+        <h2>Get In Touch</h2>
+        <div class="elements">
+          <a
+            href="https://www.linkedin.com/in/mayur-jagtap-0b3834222/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/MayurJagtap096" target="_blank">
+            <i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://twitter.com/mayurjagtap096" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
